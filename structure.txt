@@ -1,0 +1,32 @@
+RLFuzz
+|-data
+    |-cJSON
+    |-common.sh
+|-output
+    |-build
+        |-cjson
+            |-corpus
+            |-include->.h
+            |-lib->.a, .so
+            |-out
+            |-src
+            |-work
+    |-projects
+        |-cjson
+            |-harnesses
+                |-harness_00000
+                    |-id_00001
+                    |-id_00002
+            |-work
+                |-fuzzer
+                    |-fuzzer_00000
+                        |-id_00001
+                |-fuzzer_output
+                    |-fuzzer_output_00000
+                        |-id_00001
+                            |-log,crashes...
+|-tools
+    |-compiler
+    |-depot
+    |-executor
+|-Dockerfile

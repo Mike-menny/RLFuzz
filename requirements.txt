@@ -1,0 +1,33 @@
+# ===== 核心框架 =====
+transformers==4.52.4
+accelerate==1.9.0
+peft==0.12.0
+vllm==0.8.5.post1
+clang
+xformers==0.0.29.post2
+
+# ===== ModelScope 生态 =====
+modelscope==1.28.0
+ms-swift==3.6.1
+
+# ===== 数据处理 =====
+datasets==3.3.2
+safetensors==0.5.3
+numpy==1.26.4
+pandas==2.3.1
+math_verify
+tree-sitter==0.25.0
+tree-sitter-c==0.24.1
+tree-sitter-cpp==0.23.4
+tree-sitter-languages
+
+# ===== 工具链 =====
+jieba==0.42.1
+sentencepiece==0.2.0
+tiktoken==0.9.0
+protobuf==4.25.8
+gpustat
+
+# ===== Web服务 =====
+fastapi==0.116.1
+gradio==5.38.0

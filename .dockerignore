@@ -1,0 +1,27 @@
+# 忽略目录
+history/
+models/QwenQwen2.5-0.5B-Instruct
+models/QwenQwen2.5-Coder-3B
+result/
+output/
+logs/
+__pycache__/
+tools/vendor/
+tools/build/
+tools/__pycache__
+
+# 忽略文件
+Dockerfile
+.dockerignore
+*.dockerignore
+
+docker-compose*.yml
+.env
+*.env
+*.bak
+*.swp
+*.tmp
+# 版本控制相关
+.git/
+.gitignore
+.gitmodules
