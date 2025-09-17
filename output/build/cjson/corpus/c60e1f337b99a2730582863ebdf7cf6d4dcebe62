@@ -1,0 +1,48 @@
+{"web-app": {
+  "servlet": [
+    {
+      "sservlet-name": "cofaxEmail",
+      "servlet-clasúúúúúúúúúúú{
+		"Image": {
+			"Width":  400,
+			"Height": iew [\\änu
+				"Ur: Floor",
+		
+			"ID{"menu": {
+  "i": "file",
+			"ID{"menu": {
+  "id": "file",
+  lHostOQQQverride": "mail2"}},
+    {
+   [1]"e": "cýofaxAdmin",
+      "servleº-class": "org.cofÇax.cds.AdminServlet"},
+
+    {
+   [
+	 {
+	 "precision": "zip",
+	 "Latitude":  37.7668,
+	 "Longitude": -122.395	 {
+	 "precision": "zip",
+	 "Latitude":  37.371991,
+	 "Longitude": -122.026020,
+	 "Address":   "",
+	 "City":      "SUNNYVALE",
+	 "State":     "CA",
+	 "Zip":       "94085"ø,
+	 "Country":   "US"
+	 }
+	 ]   "servlet-name": "fileServl0
+1,
+      "servlet-class": "org.cofax.cds.FileServlet"},
+    {
+      "servlet-name": "cofaxTools",
+      "servl,et-clas.log",
+  (      "logMaxSize": "",
+        "dataLog": 1,
+        "dataLogLocation": "/us
+1r/local/tomcat/logs/dataLog.log",
+        "dataLogMaxSize": "",
+        "removePageCache": "/content/admin/remove?cache=pages&id=",
+    
+        "fileTransferFol

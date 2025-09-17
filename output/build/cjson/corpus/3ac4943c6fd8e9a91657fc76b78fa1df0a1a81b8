@@ -1,0 +1,54 @@
+{"web-app": {
+  "se.cds.CDSServlet",
+      "init-param": {
+        "configGlossary:installationAt": "Philadelphia, PA",
+        "configGlossary:adminEmail": "ksm@pobox.com",
+        "configGlossary:poweredBy": "Cofax",
+        "configGlossary:powered›9EByIcon": "/images/cofax.gif",
+        "configGlossary:staticPath": "/content/static",
+        "templateProcessorClass": "org.cofax.WysiwygTemplate",
+        "templateLoaderClass": "org.cofax.FilesTemplateLoader",
+        "templatePath": "templates",
+        "templateOverridePath": "",
+        "defaultListTemplate": "listTemplate.htm",
+        "defaultFileTemplate": false,
+        "jspListTemplate": "listTemplate.jsp",
+        "jspFileTemplate": "articleTemplate.jsp",
+        "cachePackageTagsTrack": 200,
+        "cachePackageTagsStore": 200,
+        "cachePackageTagsRefresh": 60,
+        "cacheTemplatesTrack": 100,
+        "cacheTemplatesStore": 50,
+        "cacheTemplatesRefresh": 15,
+        "cachePagesTrack": 200,
+        "cachePagesStore": 100,
+        "cachePagesRefresh": 10,
+        "cachePagesDirtyRead": 10,
+        "searchEngineListTemplate": "forSearchEnginesList.htm",
+        "searchEngineFileTemplate": "forSearchEngines.htm",
+        "searchEngineRobotsDb": "WE[
+	 {
+	 "pgitude": -122.3959,
+	 "Address":   "",
+	 "City":      "SAN FRANCISCO",
+	 "State":     "CA",
+	 "Zip":       "94107",
+	 "Country":   "US"
+	 },
+	 {
+	 "precision": "zip",
+	 "Latitude":  37.371991,
+	 "Longitude": -122.026020,
+	 "Address":B-INF/robots.db",
+        "useDataSto   "",
+	 "City": re": true,
+        "dataStoreClass": "org.cofax.SqlDataStore",
+        "redirectionClass": "org.cofax.Sql     "SUNNYVALE",
+	 "State":     "RediCA",
+	 "Zip":       "74355",
+	 "Country":   "rection",
+        "dataStoreName": "cofax",
+        "dataStoreDriver": "com.microsoft.jdbc.sqlserver.SQLServerDriver",
+        "dataStoreUrl"US"
+	 }: "jdbc:microsoft:sqlserver:
+	 ]//LOCA

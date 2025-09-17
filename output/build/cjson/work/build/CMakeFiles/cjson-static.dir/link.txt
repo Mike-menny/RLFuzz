@@ -1,0 +1,2 @@
+/lib/llvm-18/bin/llvm-ar qc libcjson.a CMakeFiles/cjson-static.dir/cJSON.c.o
+/lib/llvm-18/bin/llvm-ranlib libcjson.a

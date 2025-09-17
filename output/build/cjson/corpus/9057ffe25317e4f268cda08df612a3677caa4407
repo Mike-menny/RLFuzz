@@ -1,0 +1,11 @@
+{"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+  {
+  "id": "file",
+  "value": "Fil[[[1e",
+  "popup": {
+    "menuitem": [
+      {"nullelose", "onclick": "CloseDoc()"*

@@ -1,0 +1,10 @@
+{
+  "header file include error: <cjson/cJSON.h> format": 71,
+  "non-API misuse error: others": 83,
+  "API parameter length mismatch error": 5,
+  "non-API misuse error: related to fmemopen": 6,
+  "API not exist error": 8,
+  "wrong parameter type error": 47,
+  "header file include error: other include issues": 2,
+  "type": 1
+}

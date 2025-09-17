@@ -1,0 +1,626 @@
+{
+    "project_name": "cjson",
+    "dataset_path": "/workspace/datasets/prompt004.jsonl",
+    "APIs": [
+        "cJSON_AddArrayToObject",
+        "cJSON_AddBoolToObject",
+        "cJSON_AddFalseToObject",
+        "cJSON_AddItemReferenceToArray",
+        "cJSON_AddItemReferenceToObject",
+        "cJSON_AddItemToArray",
+        "cJSON_AddItemToObject",
+        "cJSON_AddItemToObjectCS",
+        "cJSON_AddNullToObject",
+        "cJSON_AddNumberToObject",
+        "cJSON_AddObjectToObject",
+        "cJSON_AddRawToObject",
+        "cJSON_AddStringToObject",
+        "cJSON_AddTrueToObject",
+        "cJSON_Compare",
+        "cJSON_CreateArray",
+        "cJSON_CreateArrayReference",
+        "cJSON_CreateBool",
+        "cJSON_CreateDoubleArray",
+        "cJSON_CreateFalse",
+        "cJSON_CreateFloatArray",
+        "cJSON_CreateIntArray",
+        "cJSON_CreateNull",
+        "cJSON_CreateNumber",
+        "cJSON_CreateObject",
+        "cJSON_CreateObjectReference",
+        "cJSON_CreateRaw",
+        "cJSON_CreateString",
+        "cJSON_CreateStringArray",
+        "cJSON_CreateStringReference",
+        "cJSON_CreateTrue",
+        "cJSON_Delete",
+        "cJSON_DeleteItemFromArray",
+        "cJSON_DeleteItemFromObject",
+        "cJSON_DeleteItemFromObjectCaseSensitive",
+        "cJSON_DetachItemFromArray",
+        "cJSON_DetachItemFromObject",
+        "cJSON_DetachItemFromObjectCaseSensitive",
+        "cJSON_DetachItemViaPointer",
+        "cJSON_Duplicate",
+        "cJSON_GetArrayItem",
+        "cJSON_GetArraySize",
+        "cJSON_GetErrorPtr",
+        "cJSON_GetNumberValue",
+        "cJSON_GetObjectItem",
+        "cJSON_GetObjectItemCaseSensitive",
+        "cJSON_GetStringValue",
+        "cJSON_HasObjectItem",
+        "cJSON_InitHooks",
+        "cJSON_InsertItemInArray",
+        "cJSON_IsArray",
+        "cJSON_IsBool",
+        "cJSON_IsFalse",
+        "cJSON_IsInvalid",
+        "cJSON_IsNull",
+        "cJSON_IsNumber",
+        "cJSON_IsObject",
+        "cJSON_IsRaw",
+        "cJSON_IsString",
+        "cJSON_IsTrue",
+        "cJSON_Minify",
+        "cJSON_Parse",
+        "cJSON_ParseWithLength",
+        "cJSON_ParseWithLengthOpts",
+        "cJSON_ParseWithOpts",
+        "cJSON_Print",
+        "cJSON_PrintBuffered",
+        "cJSON_PrintPreallocated",
+        "cJSON_PrintUnformatted",
+        "cJSON_ReplaceItemInArray",
+        "cJSON_ReplaceItemInObject",
+        "cJSON_ReplaceItemInObjectCaseSensitive",
+        "cJSON_ReplaceItemViaPointer",
+        "cJSON_SetNumberHelper",
+        "cJSON_SetValuestring",
+        "cJSON_Version",
+        "cJSON_free",
+        "cJSON_malloc"
+    ],
+    "context": [
+        {
+            "cJSON_AddItemReferenceToArray": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "cJSON"
+                ]
+            },
+            "cJSON_AddItemReferenceToObject": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "cJSON"
+                ]
+            },
+            "cJSON_InitHooks": {
+                "ret_type": "void",
+                "param_types": [
+                    "cJSON_Hooks"
+                ]
+            },
+            "cJSON_AddStringToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "char"
+                ]
+            },
+            "cJSON_AddObjectToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_Version": {
+                "ret_type": "char",
+                "param_types": [
+                    "void"
+                ]
+            },
+            "cJSON_AddRawToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "char"
+                ]
+            },
+            "cJSON_Compare": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "cJSON",
+                    "cJSON_bool"
+                ]
+            },
+            "cJSON_AddArrayToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_Duplicate": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "cJSON_bool"
+                ]
+            },
+            "cJSON_CreateArrayReference": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_AddNullToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_GetObjectItemCaseSensitive": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_HasObjectItem": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_Minify": {
+                "ret_type": "void",
+                "param_types": [
+                    "char"
+                ]
+            },
+            "cJSON_ParseWithOpts": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "char",
+                    "char",
+                    "cJSON_bool"
+                ]
+            },
+            "cJSON_ParseWithLengthOpts": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "char",
+                    "size_t",
+                    "char",
+                    "cJSON_bool"
+                ]
+            },
+            "cJSON_Delete": {
+                "ret_type": "void",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_DeleteItemFromArray": {
+                "ret_type": "void",
+                "param_types": [
+                    "cJSON",
+                    "int"
+                ]
+            },
+            "cJSON_DetachItemFromObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_AddItemToArray": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "cJSON"
+                ]
+            },
+            "cJSON_IsBool": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_CreateFloatArray": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "float",
+                    "int"
+                ]
+            },
+            "cJSON_CreateStringArray": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "char",
+                    "int"
+                ]
+            },
+            "cJSON_DetachItemViaPointer": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "cJSON"
+                ]
+            },
+            "cJSON_InsertItemInArray": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "int",
+                    "cJSON"
+                ]
+            },
+            "cJSON_IsNull": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_CreateDoubleArray": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "double",
+                    "int"
+                ]
+            },
+            "cJSON_DetachItemFromArray": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "int"
+                ]
+            },
+            "cJSON_CreateIntArray": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "int",
+                    "int"
+                ]
+            },
+            "cJSON_DeleteItemFromObjectCaseSensitive": {
+                "ret_type": "void",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_GetErrorPtr": {
+                "ret_type": "char",
+                "param_types": [
+                    "void"
+                ]
+            },
+            "cJSON_IsInvalid": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_IsRaw": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_CreateTrue": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "void"
+                ]
+            },
+            "cJSON_CreateFalse": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "void"
+                ]
+            },
+            "cJSON_GetNumberValue": {
+                "ret_type": "double",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_ReplaceItemViaPointer": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "cJSON",
+                    "cJSON"
+                ]
+            },
+            "cJSON_ReplaceItemInArray": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "int",
+                    "cJSON"
+                ]
+            },
+            "cJSON_GetArraySize": {
+                "ret_type": "int",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_PrintBuffered": {
+                "ret_type": "char",
+                "param_types": [
+                    "cJSON",
+                    "int",
+                    "cJSON_bool"
+                ]
+            },
+            "cJSON_GetObjectItem": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_GetArrayItem": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "int"
+                ]
+            },
+            "cJSON_IsFalse": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_IsArray": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_AddBoolToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "cJSON_bool"
+                ]
+            },
+            "cJSON_IsTrue": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_IsObject": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_AddNumberToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "double"
+                ]
+            },
+            "cJSON_GetStringValue": {
+                "ret_type": "char",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_CreateNull": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "void"
+                ]
+            },
+            "cJSON_malloc": {
+                "ret_type": "void",
+                "param_types": [
+                    "size_t"
+                ]
+            },
+            "cJSON_Parse": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "char"
+                ]
+            },
+            "cJSON_CreateBool": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON_bool"
+                ]
+            },
+            "cJSON_CreateObjectReference": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_SetNumberHelper": {
+                "ret_type": "double",
+                "param_types": [
+                    "cJSON",
+                    "double"
+                ]
+            },
+            "cJSON_ParseWithLength": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "char",
+                    "size_t"
+                ]
+            },
+            "cJSON_CreateNumber": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "double"
+                ]
+            },
+            "cJSON_free": {
+                "ret_type": "void",
+                "param_types": [
+                    "void"
+                ]
+            },
+            "cJSON_CreateStringReference": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "char"
+                ]
+            },
+            "cJSON_CreateRaw": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "char"
+                ]
+            },
+            "cJSON_ReplaceItemInObject": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "cJSON"
+                ]
+            },
+            "cJSON_ReplaceItemInObjectCaseSensitive": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "cJSON"
+                ]
+            },
+            "cJSON_CreateString": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "char"
+                ]
+            },
+            "cJSON_PrintPreallocated": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "int",
+                    "cJSON_bool"
+                ]
+            },
+            "cJSON_Print": {
+                "ret_type": "char",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_AddItemToObjectCS": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "cJSON"
+                ]
+            },
+            "cJSON_AddItemToObject": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON",
+                    "char",
+                    "cJSON"
+                ]
+            },
+            "cJSON_SetValuestring": {
+                "ret_type": "char",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_DetachItemFromObjectCaseSensitive": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_DeleteItemFromObject": {
+                "ret_type": "void",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_IsNumber": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_CreateArray": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "void"
+                ]
+            },
+            "cJSON_AddTrueToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_IsString": {
+                "ret_type": "cJSON_bool",
+                "param_types": [
+                    "cJSON"
+                ]
+            },
+            "cJSON_CreateObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "void"
+                ]
+            },
+            "cJSON_AddFalseToObject": {
+                "ret_type": "cJSON",
+                "param_types": [
+                    "cJSON",
+                    "char"
+                ]
+            },
+            "cJSON_PrintUnformatted": {
+                "ret_type": "char",
+                "param_types": [
+                    "cJSON"
+                ]
+            }
+        },
+        {
+            "cJSON": "typedef struct cJSON\n{\n    /* next/prev allow you to walk array/object chains. Alternatively, use GetArraySize/GetArrayItem/GetObjectItem */\n    struct cJSON *next;\n    struct cJSON *prev;\n    /* An array or object item will have a child pointer pointing to a chain of the items in the array/object. */\n    struct cJSON *child;\n\n    /* The type of the item, as above. */\n    int type;\n\n    /* The item's string, if type==cJSON_String  and type == cJSON_Raw */\n    char *valuestring;\n    /* writing to valueint is DEPRECATED, use cJSON_SetNumberValue instead */\n    int valueint;\n    /* The item's number, if type==cJSON_Number */\n    double valuedouble;\n\n    /* The item's name string, if this item is the child of, or is in the list of subitems of an object. */\n    char *string;\n} cJSON;",
+            "cJSON_bool": "typedef int cJSON_bool;",
+            "cJSON_Hooks": "typedef struct cJSON_Hooks\n{\n      /* malloc/free are CDECL on Windows regardless of the default calling convention of the compiler, so ensure the hooks allow passing those functions directly. */\n      void *(CJSON_CDECL *malloc_fn)(size_t sz);\n      void (CJSON_CDECL *free_fn)(void *ptr);\n} cJSON_Hooks;"
+        }
+    ],
+    "header_name": [
+        "cJSON.h"
+    ]
+}

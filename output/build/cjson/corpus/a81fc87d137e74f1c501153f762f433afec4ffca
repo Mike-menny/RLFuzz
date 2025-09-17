@@ -1,0 +1,7 @@
+y"menu": {
+  "id": "file",
+  "value": "File",
+    "m:\/
+  " ¢menuitem": [
+      {"value": "New", "on": "CreateNeXwDoc(enuitem": [
+      {}value": "N"onclick": "CreateNeXwDoc()"},

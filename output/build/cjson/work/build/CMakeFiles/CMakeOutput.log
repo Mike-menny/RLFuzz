@@ -1,0 +1,590 @@
+The system is: Linux - 5.15.0-138-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/local/bin/wllvm 
+Build flags: -g;-O0;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced ".CMakeCCompilerId.o"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced ".CMakeCCompilerId.o.bc"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/workspace/output/build/cjson/work/build/CMakeFiles/3.22.1/CompilerIdC/.CMakeCCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5d4d5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5d4d5.dir/build.make CMakeFiles/cmTC_5d4d5.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o
+/usr/local/bin/wllvm   -g -O0    -v -MD -MT CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Ubuntu clang version 18.1.8 (++20240731024944+3b5b5c1ec4a3-1~exp1~20240731145000.144)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /lib/llvm-18/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=5 -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O0 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -dwarf-debug-flags "/usr/lib/llvm-18/bin/clang -g -O0 -v -MD -MT CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c" -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/llvm-18/lib/clang/18/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking C executable cmTC_5d4d5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d4d5.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0   -v -rdynamic CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -o cmTC_5d4d5 
+Ubuntu clang version 18.1.8 (++20240731024944+3b5b5c1ec4a3-1~exp1~20240731145000.144)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /lib/llvm-18/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5d4d5 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/llvm-18/lib/clang/18/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5d4d5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5d4d5.dir/build.make CMakeFiles/cmTC_5d4d5.dir/build]
+  ignore line: [gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/local/bin/wllvm   -g -O0    -v -MD -MT CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Ubuntu clang version 18.1.8 (++20240731024944+3b5b5c1ec4a3-1~exp1~20240731145000.144)]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /lib/llvm-18/bin]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=5 -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O0 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -dwarf-debug-flags "/usr/lib/llvm-18/bin/clang -g -O0 -v -MD -MT CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c" -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-pc-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_5d4d5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d4d5.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/wllvm -g -O0   -v -rdynamic CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -o cmTC_5d4d5 ]
+  ignore line: [Ubuntu clang version 18.1.8 (++20240731024944+3b5b5c1ec4a3-1~exp1~20240731145000.144)]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /lib/llvm-18/bin]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5d4d5 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_5d4d5] ==> ignore
+    arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+    arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTC_5d4d5.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+    arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test FLAG_SUPPORTED_stdc89 succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e6e98/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e6e98.dir/build.make CMakeFiles/cmTC_e6e98.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6e98.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_stdc89  -g -O0    -std=c89 -MD -MT CMakeFiles/cmTC_e6e98.dir/src.c.o -MF CMakeFiles/cmTC_e6e98.dir/src.c.o.d -o CMakeFiles/cmTC_e6e98.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e6e98
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6e98.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0  -rdynamic CMakeFiles/cmTC_e6e98.dir/src.c.o -o cmTC_e6e98 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_pedantic succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_39a46/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_39a46.dir/build.make CMakeFiles/cmTC_39a46.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_39a46.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_pedantic  -g -O0 -std=c89    -pedantic -MD -MT CMakeFiles/cmTC_39a46.dir/src.c.o -MF CMakeFiles/cmTC_39a46.dir/src.c.o.d -o CMakeFiles/cmTC_39a46.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_39a46
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39a46.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89  -rdynamic CMakeFiles/cmTC_39a46.dir/src.c.o -o cmTC_39a46 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wall succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c87a4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c87a4.dir/build.make CMakeFiles/cmTC_c87a4.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c87a4.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wall  -g -O0 -std=c89 -pedantic    -Wall -MD -MT CMakeFiles/cmTC_c87a4.dir/src.c.o -MF CMakeFiles/cmTC_c87a4.dir/src.c.o.d -o CMakeFiles/cmTC_c87a4.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c87a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c87a4.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic  -rdynamic CMakeFiles/cmTC_c87a4.dir/src.c.o -o cmTC_c87a4 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wextra succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2ed04/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2ed04.dir/build.make CMakeFiles/cmTC_2ed04.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ed04.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wextra  -g -O0 -std=c89 -pedantic -Wall    -Wextra -MD -MT CMakeFiles/cmTC_2ed04.dir/src.c.o -MF CMakeFiles/cmTC_2ed04.dir/src.c.o.d -o CMakeFiles/cmTC_2ed04.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2ed04
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ed04.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall  -rdynamic CMakeFiles/cmTC_2ed04.dir/src.c.o -o cmTC_2ed04 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Werror succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8b89e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8b89e.dir/build.make CMakeFiles/cmTC_8b89e.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b89e.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Werror  -g -O0 -std=c89 -pedantic -Wall -Wextra    -Werror -MD -MT CMakeFiles/cmTC_8b89e.dir/src.c.o -MF CMakeFiles/cmTC_8b89e.dir/src.c.o.d -o CMakeFiles/cmTC_8b89e.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8b89e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b89e.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra  -rdynamic CMakeFiles/cmTC_8b89e.dir/src.c.o -o cmTC_8b89e 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wstrictprototypes succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_806c9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_806c9.dir/build.make CMakeFiles/cmTC_806c9.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_806c9.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wstrictprototypes  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror    -Wstrict-prototypes -MD -MT CMakeFiles/cmTC_806c9.dir/src.c.o -MF CMakeFiles/cmTC_806c9.dir/src.c.o.d -o CMakeFiles/cmTC_806c9.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_806c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_806c9.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror  -rdynamic CMakeFiles/cmTC_806c9.dir/src.c.o -o cmTC_806c9 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wwritestrings succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_60c6a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_60c6a.dir/build.make CMakeFiles/cmTC_60c6a.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60c6a.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wwritestrings  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes    -Wwrite-strings -MD -MT CMakeFiles/cmTC_60c6a.dir/src.c.o -MF CMakeFiles/cmTC_60c6a.dir/src.c.o.d -o CMakeFiles/cmTC_60c6a.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_60c6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c6a.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_60c6a.dir/src.c.o -o cmTC_60c6a 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wshadow succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_00840/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_00840.dir/build.make CMakeFiles/cmTC_00840.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00840.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wshadow  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings    -Wshadow -MD -MT CMakeFiles/cmTC_00840.dir/src.c.o -MF CMakeFiles/cmTC_00840.dir/src.c.o.d -o CMakeFiles/cmTC_00840.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_00840
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00840.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings  -rdynamic CMakeFiles/cmTC_00840.dir/src.c.o -o cmTC_00840 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Winitself succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0f0db/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0f0db.dir/build.make CMakeFiles/cmTC_0f0db.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f0db.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Winitself  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow    -Winit-self -MD -MT CMakeFiles/cmTC_0f0db.dir/src.c.o -MF CMakeFiles/cmTC_0f0db.dir/src.c.o.d -o CMakeFiles/cmTC_0f0db.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0f0db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f0db.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow  -rdynamic CMakeFiles/cmTC_0f0db.dir/src.c.o -o cmTC_0f0db 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wcastalign succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_de6e3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_de6e3.dir/build.make CMakeFiles/cmTC_de6e3.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_de6e3.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wcastalign  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self    -Wcast-align -MD -MT CMakeFiles/cmTC_de6e3.dir/src.c.o -MF CMakeFiles/cmTC_de6e3.dir/src.c.o.d -o CMakeFiles/cmTC_de6e3.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_de6e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de6e3.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self  -rdynamic CMakeFiles/cmTC_de6e3.dir/src.c.o -o cmTC_de6e3 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wformat2 succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_99358/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_99358.dir/build.make CMakeFiles/cmTC_99358.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99358.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wformat2  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align    -Wformat=2 -MD -MT CMakeFiles/cmTC_99358.dir/src.c.o -MF CMakeFiles/cmTC_99358.dir/src.c.o.d -o CMakeFiles/cmTC_99358.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_99358
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99358.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align  -rdynamic CMakeFiles/cmTC_99358.dir/src.c.o -o cmTC_99358 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wmissingprototypes succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9d104/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9d104.dir/build.make CMakeFiles/cmTC_9d104.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d104.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wmissingprototypes  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2    -Wmissing-prototypes -MD -MT CMakeFiles/cmTC_9d104.dir/src.c.o -MF CMakeFiles/cmTC_9d104.dir/src.c.o.d -o CMakeFiles/cmTC_9d104.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9d104
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d104.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2  -rdynamic CMakeFiles/cmTC_9d104.dir/src.c.o -o cmTC_9d104 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wstrictoverflow2 succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cf7f9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cf7f9.dir/build.make CMakeFiles/cmTC_cf7f9.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf7f9.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wstrictoverflow2  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes    -Wstrict-overflow=2 -MD -MT CMakeFiles/cmTC_cf7f9.dir/src.c.o -MF CMakeFiles/cmTC_cf7f9.dir/src.c.o.d -o CMakeFiles/cmTC_cf7f9.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cf7f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf7f9.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes  -rdynamic CMakeFiles/cmTC_cf7f9.dir/src.c.o -o cmTC_cf7f9 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wcastqual succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4f682/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4f682.dir/build.make CMakeFiles/cmTC_4f682.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4f682.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wcastqual  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2    -Wcast-qual -MD -MT CMakeFiles/cmTC_4f682.dir/src.c.o -MF CMakeFiles/cmTC_4f682.dir/src.c.o.d -o CMakeFiles/cmTC_4f682.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4f682
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f682.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2  -rdynamic CMakeFiles/cmTC_4f682.dir/src.c.o -o cmTC_4f682 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wundef succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cf7ed/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cf7ed.dir/build.make CMakeFiles/cmTC_cf7ed.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf7ed.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wundef  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual    -Wundef -MD -MT CMakeFiles/cmTC_cf7ed.dir/src.c.o -MF CMakeFiles/cmTC_cf7ed.dir/src.c.o.d -o CMakeFiles/cmTC_cf7ed.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cf7ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf7ed.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual  -rdynamic CMakeFiles/cmTC_cf7ed.dir/src.c.o -o cmTC_cf7ed 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wswitchdefault succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_de31d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_de31d.dir/build.make CMakeFiles/cmTC_de31d.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_de31d.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wswitchdefault  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef    -Wswitch-default -MD -MT CMakeFiles/cmTC_de31d.dir/src.c.o -MF CMakeFiles/cmTC_de31d.dir/src.c.o.d -o CMakeFiles/cmTC_de31d.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_de31d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de31d.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef  -rdynamic CMakeFiles/cmTC_de31d.dir/src.c.o -o cmTC_de31d 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wconversion succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_29e83/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_29e83.dir/build.make CMakeFiles/cmTC_29e83.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29e83.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wconversion  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default    -Wconversion -MD -MT CMakeFiles/cmTC_29e83.dir/src.c.o -MF CMakeFiles/cmTC_29e83.dir/src.c.o.d -o CMakeFiles/cmTC_29e83.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_29e83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29e83.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default  -rdynamic CMakeFiles/cmTC_29e83.dir/src.c.o -o cmTC_29e83 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wccompat succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_87ced/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_87ced.dir/build.make CMakeFiles/cmTC_87ced.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87ced.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wccompat  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion    -Wc++-compat -MD -MT CMakeFiles/cmTC_87ced.dir/src.c.o -MF CMakeFiles/cmTC_87ced.dir/src.c.o.d -o CMakeFiles/cmTC_87ced.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_87ced
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87ced.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion  -rdynamic CMakeFiles/cmTC_87ced.dir/src.c.o -o cmTC_87ced 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_fstackprotectorstrong succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0c531/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c531.dir/build.make CMakeFiles/cmTC_0c531.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c531.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_fstackprotectorstrong  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat    -fstack-protector-strong -MD -MT CMakeFiles/cmTC_0c531.dir/src.c.o -MF CMakeFiles/cmTC_0c531.dir/src.c.o.d -o CMakeFiles/cmTC_0c531.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0c531
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c531.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat  -rdynamic CMakeFiles/cmTC_0c531.dir/src.c.o -o cmTC_0c531 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wcomma succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_09596/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_09596.dir/build.make CMakeFiles/cmTC_09596.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09596.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wcomma  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong    -Wcomma -MD -MT CMakeFiles/cmTC_09596.dir/src.c.o -MF CMakeFiles/cmTC_09596.dir/src.c.o.d -o CMakeFiles/cmTC_09596.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_09596
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09596.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong  -rdynamic CMakeFiles/cmTC_09596.dir/src.c.o -o cmTC_09596 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wdoublepromotion succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9a9bd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9a9bd.dir/build.make CMakeFiles/cmTC_9a9bd.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a9bd.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wdoublepromotion  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma    -Wdouble-promotion -MD -MT CMakeFiles/cmTC_9a9bd.dir/src.c.o -MF CMakeFiles/cmTC_9a9bd.dir/src.c.o.d -o CMakeFiles/cmTC_9a9bd.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9a9bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a9bd.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma  -rdynamic CMakeFiles/cmTC_9a9bd.dir/src.c.o -o cmTC_9a9bd 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wparentheses succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b8671/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b8671.dir/build.make CMakeFiles/cmTC_b8671.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8671.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wparentheses  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion    -Wparentheses -MD -MT CMakeFiles/cmTC_b8671.dir/src.c.o -MF CMakeFiles/cmTC_b8671.dir/src.c.o.d -o CMakeFiles/cmTC_b8671.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b8671
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8671.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion  -rdynamic CMakeFiles/cmTC_b8671.dir/src.c.o -o cmTC_b8671 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wformatoverflow succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c4281/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c4281.dir/build.make CMakeFiles/cmTC_c4281.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4281.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wformatoverflow  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses    -Wformat-overflow -MD -MT CMakeFiles/cmTC_c4281.dir/src.c.o -MF CMakeFiles/cmTC_c4281.dir/src.c.o.d -o CMakeFiles/cmTC_c4281.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c4281
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4281.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses  -rdynamic CMakeFiles/cmTC_c4281.dir/src.c.o -o cmTC_c4281 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wunusedmacros succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_021dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_021dc.dir/build.make CMakeFiles/cmTC_021dc.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_021dc.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wunusedmacros  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow    -Wunused-macros -MD -MT CMakeFiles/cmTC_021dc.dir/src.c.o -MF CMakeFiles/cmTC_021dc.dir/src.c.o.d -o CMakeFiles/cmTC_021dc.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_021dc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_021dc.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow  -rdynamic CMakeFiles/cmTC_021dc.dir/src.c.o -o cmTC_021dc 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wmissingvariabledeclarations succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed46c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed46c.dir/build.make CMakeFiles/cmTC_ed46c.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed46c.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wmissingvariabledeclarations  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wmissing-variable-declarations -MD -MT CMakeFiles/cmTC_ed46c.dir/src.c.o -MF CMakeFiles/cmTC_ed46c.dir/src.c.o.d -o CMakeFiles/cmTC_ed46c.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ed46c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed46c.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros  -rdynamic CMakeFiles/cmTC_ed46c.dir/src.c.o -o cmTC_ed46c 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wusedbutmarkedunused succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_53dda/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_53dda.dir/build.make CMakeFiles/cmTC_53dda.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53dda.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wusedbutmarkedunused  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations    -Wused-but-marked-unused -MD -MT CMakeFiles/cmTC_53dda.dir/src.c.o -MF CMakeFiles/cmTC_53dda.dir/src.c.o.d -o CMakeFiles/cmTC_53dda.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_53dda
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53dda.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations  -rdynamic CMakeFiles/cmTC_53dda.dir/src.c.o -o cmTC_53dda 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_Wswitchenum succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_457e4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_457e4.dir/build.make CMakeFiles/cmTC_457e4.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_457e4.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_Wswitchenum  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wused-but-marked-unused    -Wswitch-enum -MD -MT CMakeFiles/cmTC_457e4.dir/src.c.o -MF CMakeFiles/cmTC_457e4.dir/src.c.o.d -o CMakeFiles/cmTC_457e4.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_457e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_457e4.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wused-but-marked-unused  -rdynamic CMakeFiles/cmTC_457e4.dir/src.c.o -o cmTC_457e4 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test FLAG_SUPPORTED_fvisibilityhidden succeeded with the following output:
+Change Dir: /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fc2ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc2ca.dir/build.make CMakeFiles/cmTC_fc2ca.dir/build
+gmake[1]: Entering directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc2ca.dir/src.c.o
+/usr/local/bin/wllvm -DFLAG_SUPPORTED_fvisibilityhidden  -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wused-but-marked-unused -Wswitch-enum    -fvisibility=hidden -MD -MT CMakeFiles/cmTC_fc2ca.dir/src.c.o -MF CMakeFiles/cmTC_fc2ca.dir/src.c.o.d -o CMakeFiles/cmTC_fc2ca.dir/src.c.o -c /workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fc2ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc2ca.dir/link.txt --verbose=1
+/usr/local/bin/wllvm -g -O0 -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wused-but-marked-unused -Wswitch-enum  -rdynamic CMakeFiles/cmTC_fc2ca.dir/src.c.o -o cmTC_fc2ca 
+gmake[1]: Leaving directory '/workspace/output/build/cjson/work/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }

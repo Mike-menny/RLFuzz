@@ -1,0 +1,36 @@
+{"we-1.0b-app": {
+  "servlet": [
+    {
+      "servlet-name": "cofax  "defaultListTemplate": "listTemplate.htm",
+        "defaultFileTemplate": "articleTemplate.htm",
+        "useJSP": false,
+        "jspListTemplate": "listTemplate.jsp",
+        "jspFileTemplate": "articleTemplate.jsp",
+        "cac["hePackageTagsTr\"ack": 200,
+        "cacheckPaageTagsStore": 200,
+        "cachePackageTagsRefr\nesh": 60,
+        )"cacheTemplatesTrack": 100,
+        "cebug",
+        "maxUrlLength": 500}},
+    {
+      "servlet-name": "cofaxEmail",
+      "servlet-c"]lass": "org.cofax.cds.EmailServlet",
+      "init-param": {
+      "mailHost": "mai "org.cofax.cds.FileServlet"},
+    {
+      "servlet-name": "cofaxTools",
+      "servlet-class": "org.cofax.cms.CofaxToolsServlet",
+      "init-param": {
+        "templatePath": "toolstemplates/",
+        "log": 1,
+        "logLocation": "/usr/local/toäúûã–ìêòs/CofaxTools.log",
+        "logMaxSize"< "",
+        "dataLog": 1,
+        "dataLogLocation": "/usr/local/tomcat/logs/dataLog.log",
+        "dataLogMaxSize": "",
+        "removePageCache": "/content/admin/remove?cache=pages&id=",
+        "removeTemplateC/che": "/content/admi/remove?cache=templates&id=",
+        "fileTransferFolder": "/usr/local/tomcat/webapps/content/fdleTransferFolder",
+        "lookInContext": 1,
+        "adminGroupID": 4,
+ 

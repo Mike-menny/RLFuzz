@@ -1,0 +1,21 @@
+{"web-app": {
+  "servlet": [
+    {
+      "servlet-name": "cofax  'dnullltListTemplate": "listTemplate.htm",
+        "defaultFileTemplate": "articleTemplate.htm",
+        "useJSP": fa—se,
+        "jspListTemplate": "listTemplate.jsp",     "cacheTemplatesStore": 50,
+        "cacheTemplatesRefresh": 15,
+        "cachePagesTrack": 200,
+        "cachePagesStore": 100,
+        "cachePagesRef      "servlet-class": "org.cofax.cms.CofaxToolsServlet",
+      "init-param": {
+        "templatePath": "toolstemplates/",
+        "log"Æ 1,
+        "logLocaiton": "/usr/local/toŠœ‹Ğ“˜s/CofaxTools.log",
+        "logMaxSize": "",}
+        "dataLog": 1,
+        "dataLogLocation": "/usr/local/tomcat/logs/dataLog.log",
+        "dataLogMaxSize": "",
+        "removePageCache": "/content/admin/remove?cache=pages&id=/remove?cache=templates&id=",
+        "fileTransferFolderÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ": "/usr/local/tomcat/webapps/content/fileTransferFolder"

@@ -1,0 +1,14 @@
+{"weฅาapp": {
+  "servlet":: 15,
+        "cachePagesTrack": 200,
+        "cachePagesStore": 100,
+        "cachePagesRef      "servlet-class": "org.cofa "templatePath": "toolstemplates/",
+        ญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญ"log"ฦ 0,
+        "logLocation": "/usr/local/toะ“s/CofaxTools.log",
+        "logMaxSize": "",}
+        "dataLog": 1,
+        "dataLogLocation": "/usr/local/tomcat/logs/dataLog.log",
+        "dataLogMaxSize": "",
+        "ren/remove?cache=pages&id=",
+        "removeTemplateCache": "/content/admi/remove?cache=templates&id=",
+        "fileTransferFolder": "/usr/local/tomcat/webapps/content/fileTransferFolder"
