@@ -30,6 +30,8 @@ class CountdownORM(ORM):
                 text = matches_c[0].strip()
             else:
                 text = text.strip()
+            
+            text = re.sub(r'<cjson/cJSON\.h>', '<cJSON.h>', text)
             output_dir = f"/workspace/output/projects/cjson/harnesses/harness_{str(epoch).zfill(5)}/id_{str(i).zfill(5)}.cpp"
             Depot.create_path(output_dir)  
             with open(output_dir, "w") as f:
@@ -37,24 +39,33 @@ class CountdownORM(ORM):
 
             error = None
             # Check for syntax errors
-            error = Reward.syntax_error(project_name=project_name,  epoch=epoch,  completion=i,  rewards=rewards)
+            error = Reward.syntax_error(project_name=project_name,  epoch=epoch,  completion=i,  rewards=rewards, code=text)
             if error:
-                Reward.save_log(project_name, epoch, i, -1, error, [], kwargs)
+                if error[1] is None or error[1][0]=="0":
+                    rewards.append(0)
+                    Reward.save_log(project_name, epoch, i, 0, error, [], kwargs)
+                else:
+                    rewards.append(-1.0)
+                    Reward.save_log(project_name, epoch, i, -1, error, [], kwargs)
                 continue
             
             # Check for compilation errors
             error = Reward.compilation_error(project_name=project_name, epoch=epoch, completion=i, rewards=rewards, additional_flags=["-O2"], debug=True)
             if error:
-                Reward.save_log(project_name, epoch, i, -0.04, error,[], kwargs)
+                rewards.append(0.008)
+                Reward.save_log(project_name, epoch, i, 0.008, error,[], kwargs)
                 continue
             
             # Check for fuzzing errors
             error = Reward.fuzz_error(project_name=project_name, epoch=epoch, completion=i, rewards=rewards)
             if error:
-                Reward.save_log(project_name, epoch, i, -0.008, error, [], kwargs)
+                rewards.append(0.04)
+                Reward.save_log(project_name, epoch, i, 0.04, error, [], kwargs)
                 continue
-            # If no errors, assign positive reward
+
+            # If no errors
             API_Called = Reward.API_coverage(project_name=project_name, epoch=epoch, completion=i, rewards=rewards)
+            rewards.append(0.04+API_Called[0])  
             Reward.save_log(project_name, epoch, i, rewards[-1], error, API_Called, kwargs)
 
         end_time = time.time()

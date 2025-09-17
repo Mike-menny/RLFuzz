@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def extract_loss_values(file_path):
     loss_values = []
-    pattern = re.compile(r"'loss':\s*([0-9.e+-]+)")
+    pattern = re.compile(r"'reward':\s*([0-9.e+-]+)")
     
     with open(file_path, 'r') as file:
         for line in file:

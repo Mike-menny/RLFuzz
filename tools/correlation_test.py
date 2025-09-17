@@ -2,39 +2,6 @@ import json
 import re
 import subprocess
 
-def analyze_api_list(api_list: list, context: list) -> float:
-    """
-    Analyze correlation between all consecutive APIs in a list and return the sum.
-    
-    Args:
-        api_list: List of API names in the order they appear
-        context: Context information list containing API definitions and type definitions
-        
-    Returns:
-        float: Sum of correlation scores for all consecutive API pairs
-    """
-    if not api_list or len(api_list) < 2:
-        print("Warning: API list must contain at least 2 APIs")
-        return 0.0
-    
-    total_correlation = 0.0
-    
-    # Iterate through consecutive pairs
-    for i in range(len(api_list) - 1):
-        api1 = api_list[i]
-        api2 = api_list[i + 1]
-        
-        print(f"\nAnalyzing pair {i+1}: {api1} -> {api2}")
-        
-        # Analyze correlation for this consecutive pair
-        score = analyze_correlation(api1, api2, context)
-        total_correlation += score
-        
-        print(f"Correlation score for {api1} -> {api2}: {score}")
-    
-    print(f"\nTotal correlation sum: {total_correlation}")
-    return total_correlation
-
 def analyze_correlation(API1: str, API2: str, context: list) -> float:
     """
     Analyze the correlation between two APIs
@@ -82,7 +49,7 @@ def analyze_correlation(API1: str, API2: str, context: list) -> float:
     
     # Call infer.sh and capture output
     result = subprocess.run(
-        ['/workspace/tools/infer.sh', API1, API2, api1_info_str, api2_info_str],
+        ['tools/infer_test.sh', API1, API2, api1_info_str, api2_info_str],
         capture_output=True,
         text=True,
         timeout=120

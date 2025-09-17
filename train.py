@@ -6,13 +6,13 @@ import json
 
 project_name = "cjson"
 dataset_path = f"/workspace/datasets/prompt004.jsonl"
-os.environ['CUDA_VISIBLE_DEVICES'] = '3, 0'
-model_path = '/workspace/models/checkpoint-600'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3,6'
+model_path = '/workspace/models/QwenQwen2.5-Coder-7B-Instruct'
 
 kwargs = {
-    'per_device_train_batch_size': 6,
-    'per_device_eval_batch_size': 6,
-    'learning_rate': 5e-7,
+    'per_device_train_batch_size': 16,
+    'per_device_eval_batch_size': 16,
+    'learning_rate': 5e-8,
     #'use_vllm': True,
     'eval_steps': 50,
     'save_steps': 100,
@@ -54,12 +54,12 @@ def grpo():
             #lora_rank = 8,
             #lora_alpha = 32,
             #lora_dropout = 0.1,
-            external_plugins = 'tools/plugin.py',
+            external_plugins = 'plugins/basic.py',
             reward_funcs = ['external_countdown'],
             dataset =dataset_path,
             split_dataset_ratio = 0.1,
             max_completion_length=4096,
-            num_generations= 6,
+            num_generations= 16,
             #deepspeed='zero2',
             **kwargs))
     last_model_checkpoint = result['last_model_checkpoint']

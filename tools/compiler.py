@@ -1,7 +1,9 @@
 import subprocess
+import sys
+import os
+sys.path.insert(0, '/workspace')
 from tools.depot import Depot
 from typing import List, Optional
-import os
 import glob
 from pathlib import Path
 
@@ -23,6 +25,7 @@ class Compiler:
                         print(f"Error: harness file for {project_name},{epoch},{completion} not found.")
                         return f"Error: harness file for {project_name},{epoch},{completion} not found."
         except Exception as e:
+            #print(e)
             print(f"harness {epoch},{completion} Syntax check failed")
             return str(e)
         command = ["clang++", "-fsyntax-only", f"-std={std}", *include_flags, cpp_file]
@@ -39,7 +42,8 @@ class Compiler:
             return None
         except subprocess.CalledProcessError as e:
             print(f"harness {epoch},{completion} Syntax check failed")
-            return str(e)
+            #print(e.stderr)
+            return str(e.stderr)
         except Exception as e:
             print(f"harness {epoch},{completion} Syntax check failed")
             return str(e)
@@ -217,7 +221,8 @@ class Compiler:
 
 # 使用示例
 if __name__ == "__main__":
-    #Compiler.compile_syntax(project_name="cjson",epoch=0,completion=0, std="c++17")
-    Compiler.compile_cov(project_name="cjson",epoch=8,completion=1,
+    syntax_error = Compiler.compile_syntax(project_name="cjson",epoch=1,completion=0, std="c++17")
+    print(syntax_error)
+    Compiler.compile_cov(project_name="cjson",epoch=0,completion=0,
                             additional_flags=["-O2"],
                             debug=True)
