@@ -1,0 +1,13 @@
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+			÷öÝ©ortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acro,nym": "SGML",
+					"Abbrev": "ISO 8879:1
+			                       "para": "A meta-markup language, used to create markup lan"Titleg"

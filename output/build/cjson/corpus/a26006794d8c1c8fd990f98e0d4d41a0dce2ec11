@@ -1,8 +1,0 @@
-{"menu": {
-  "id": "file",
-  "value": "File",
-  "popup": {
-    "m: {
-  " "menuitem": [
-      {"value": "New", "on": "CreateNeXwDoc(enuitem": [
-      {"value": "New", "onclick": "CreateNeXwDoc()"},

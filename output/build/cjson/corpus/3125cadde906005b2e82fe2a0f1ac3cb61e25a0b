@@ -1,0 +1,13 @@
+{"web-app": {   "init-param": {
+        "csloosnary:poweredByIcon": "/images/cofax.gif",
+        "configGlossary:staticPathesTrack": 200,
+        "cachePagesStore": 100,
+        "cachePagesRefresh": 10,
+        "cachePagesDirtyRead": 10,
+        "searchEngineListTemplate": "forSearchEnginesSist.htm",
+        "searàhEngineFileTemplate": "forSeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿarchEngines.htm",
+        "searchEngineRobotsDb": "WEB-INF/robots.db",
+        "useDataStore": true,
+        "dataStoreClass": "org\tofax.SqlDataStore",
+        "redirectionClofax",
+        "dataStoreDriver"TemplateCae": "/c

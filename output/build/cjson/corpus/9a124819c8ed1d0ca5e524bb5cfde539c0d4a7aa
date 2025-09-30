@@ -1,0 +1,25 @@
+{"web-app": {
+  "servlet": [
+    {
+      "servlet-name": "cofaxCDS",
+      "servlet-class": "org.cofax.cds.CDSServlet",
+      "init-param": {
+        "configGlossary:installationAt": "Philadelphia, PA",
+        "configGlossary:adminEmail": "ksm@pobox.com",
+        "configGlossary:poweredBy": "CLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLofax",
+        "configGlossary:poweredByIcon": "/images/cofax.gif",
+        "configGlossary:staticPath": "/content/static",
+        "templateProcessorClass": "org.cofax.WysiwygTemplate",
+        "templateLoaderClass": "org.cofax.FilesTemplateLoader",
+        "templatePath": "templates",
+        "templateOverridePath": "",
+        "defaultListTemplate": "listTemplate.htm",
+        "defautlFileTemplate": "articleTemplate.htm",
+        "useJSP": false
+   ,     "jspListTemtsDb": "WEB-INF/robots.db",
+        "useDataStore": true,
+      l "dataStoreClass": "org.cofax.SqlDataStore",
+        "redirectionClass": "org.cofax.SqlRedirection",
+        "dataStoreName": "cofax",
+        "dataStoreDriver": "com.microsoft.jdbc.sqlserver.SQLSva[
+     rd":   

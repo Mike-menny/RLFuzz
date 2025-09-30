@@ -1,0 +1,8 @@
+{"web-app": {
+  "servlet": [
+    {
+      "servlet-name": "cofaxCDS",
+      "sel": "ksm@pobox.com",
+        "configGlossary:poweredBy": "Cofax",
+        "configGlossary:powe\fredByIcon lass": "org.cofax.SqlDataStore",
+        "redirectionClass": "org.cofax.SqlRedi

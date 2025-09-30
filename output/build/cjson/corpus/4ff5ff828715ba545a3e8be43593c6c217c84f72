@@ -1,0 +1,34 @@
+{"web-app": {
+  "servlet": [
+    {
+      "servlet-name": "cofaxCDS",
+      "servlet-’class": "org.cofax.cds.CDSServlet",
+      "init-param": {
+        "conlossary:poweredByIcon": "/images/cofax.gif",
+        "configGlossary:staticPathesTrack": 200,
+        "cachePagesStore": 100,
+        "cachePagesRefresh": 10,
+        "cachePagesDirtyRead": 10,
+        "searchEngineListTemplate": "forSearchEnginesList.htm",
+        "searàhEngineFileTemplate": "forSeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿarchEngines.htm",
+        "searchEngineRobotsDb": "WEB-INF/robots.db",
+        "useDataStore": true,
+        "dataStoreClass": "org\tofax.SqlDataStore",
+        "redirectionClass": "org.co[    [úfax.SqlRedirection",
+        "dataStoreName": "cofax",
+        "dataStoreDriver": "com.microsoft.jdbc.sqlserver.SQLServerDriver",
+        "dataStoreUrl": "jdbc:mitabaseName=goon",
+        "dataStoreUser": \u12ab
+        "COUNT ON;select 
+    {
+    ofaxTools.log",
+        "logMaxSize": "",
+        "dataLog": 1,
+        "dataLogLrg.cofax.cds.AdminServlet"},
+
+    {
+      "servlet-name": "fileServlet",
+      "servlet-class": "org.cofax.cdocation": "/usr/local/tomcat1/logs/dataLog.log",
+        "dataLogMaxSize": "",
+        "lemovePageCache": "/conte]nt/admin/remove?cache=pages&id=",
+        "removeTemplateCae": "/c

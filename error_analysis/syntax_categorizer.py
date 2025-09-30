@@ -1,11 +1,15 @@
 import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '4,5'
 import re
 import sys
 from contextlib import contextmanager
-from swift.utils import get_logger
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '2'
-logger = get_logger()
+import torch
+os.environ.get('CUDA_VISIBLE_DEVICES')
+torch.cuda.device_count()
+names = [torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())]
+
+project_name = "cJSON"
 
 @contextmanager
 def silence_all_output():
@@ -50,7 +54,7 @@ def syntax_categorize(error, code):
                     infer_request = InferRequest(messages=[
                         {
                             'role': 'system', 
-                            'content': 'Analyze error given in the user message for cJSON fuzz drivers; output ONLY a Python list [0 or 1, \'type1\', \'type2\', ...] (multiple types allowed for more than one error); 0 = not cJSON-related, 1 = cJSON-related; allowed types: if 0, then \'non-API misuse error: related to fmemopen\', \'non-API misuse error: others\'; if 1, then \'header file include error: <cjson/cJSON.h> format\', \'header file include error: other include issues\', \'API not exist error\', \'wrong parameter type error\', \'API parameter length mismatch error\', \'library error: others\'; set 1 only if cJSON headers/types/functions/linkage are implicated; fmemopen is non-cJSON.'
+                            'content': f"Analyze error given in the user message for {project_name} fuzz drivers; output ONLY a Python list [0 or 1, \'type1\', \'type2\', ...] (multiple types allowed for more than one error); 0 = no API-related errors, 1 = at least one API-related error; allowed types: if API-related errors exist (1), then include: \'library header file include error\', \'API not exist error\', \'wrong parameter type error\', \'API parameter length mismatch error\', \'library error: others\'; if no API-related errors (0), then include: \'non-API misuse error: related to fmemopen\', \'non-API misuse error: others\'; set 1 only if {project_name} headers/types/functions/linkage are implicated; fmemopen is non-library; output all error types found in the message."
                         },
                         {
                             'role': 'user', 

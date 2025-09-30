@@ -16,7 +16,7 @@ API2_INFO="$4"
 PROMPT="Please analyze if these two given APIs have semantic relationship, such as create-append or append-remove logic chains. API1: ${API1} - ${API1_INFO}. API2: ${API2} - ${API2_INFO}. If there is a semantic relationship, output only '1'. If not, output only '0'. Do not include any other text or explanation in your response."
 
 # 一次性输入整个prompt
-echo "$PROMPT" | CUDA_VISIBLE_DEVICES=7 swift infer \
+echo "$PROMPT" | CUDA_VISIBLE_DEVICES=4 swift infer \
     --model_type qwen2_5 \
     --model /workspace/models/QwenQwen2.5-Coder-7B-Instruct \
     --stream true \

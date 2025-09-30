@@ -39,32 +39,28 @@ class CountdownORM(ORM):
 
             error = None
             # Check for syntax errors
-            error = Reward.syntax_error(project_name=project_name,  epoch=epoch,  completion=i,  rewards=rewards, code=text)
+            error = Reward.syntax_error(project_name=project_name,  epoch=epoch,  completion=i, code=text)
             if error:
-                if error[1] is None or error[1][0]=="0":
-                    rewards.append(0)
-                    Reward.save_log(project_name, epoch, i, 0, error, [], kwargs)
-                else:
-                    rewards.append(-1.0)
-                    Reward.save_log(project_name, epoch, i, -1, error, [], kwargs)
+                rewards.append(None)
+                Reward.save_log(project_name, epoch, i, None, error, [], kwargs)
                 continue
             
             # Check for compilation errors
-            error = Reward.compilation_error(project_name=project_name, epoch=epoch, completion=i, rewards=rewards, additional_flags=["-O2"], debug=True)
+            error = Reward.compilation_error(project_name=project_name, epoch=epoch, completion=i, additional_flags=["-O2"], debug=True)
             if error:
                 rewards.append(0.008)
                 Reward.save_log(project_name, epoch, i, 0.008, error,[], kwargs)
                 continue
             
             # Check for fuzzing errors
-            error = Reward.fuzz_error(project_name=project_name, epoch=epoch, completion=i, rewards=rewards)
+            error = Reward.fuzz_error(project_name=project_name, epoch=epoch, completion=i)
             if error:
                 rewards.append(0.04)
                 Reward.save_log(project_name, epoch, i, 0.04, error, [], kwargs)
                 continue
 
             # If no errors
-            API_Called = Reward.API_coverage(project_name=project_name, epoch=epoch, completion=i, rewards=rewards)
+            API_Called = Reward.API_coverage(project_name=project_name, epoch=epoch, completion=i)
             rewards.append(0.04+API_Called[0])  
             Reward.save_log(project_name, epoch, i, rewards[-1], error, API_Called, kwargs)
 

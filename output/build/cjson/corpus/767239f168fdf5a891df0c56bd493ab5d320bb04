@@ -1,0 +1,7 @@
+{"web-app": {   "init-param": {
+        "csloosnary:poweredByIcon": "/images/cofax.gif",
+        "configGlossary:staticPathesTrack": 200,
+        "cachePagesStore": 100,
+        "cachePageataStoreClass": "org\tofax.SqlDataStore",
+        "redirectionClofax",
+        "dataStoreDriver"TemplateCaùée": "/c

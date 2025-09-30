@@ -1,25 +1,19 @@
 {
   "name": "RLFuzz",
-  "dockerFile": "../Dockerfile",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
   "runArgs": [
-    "--runtime=nvidia",  // 明确指定运行时（与您的daemon.json一致）
-    "--gpus=all",     // 现代NVIDIA toolkit仍需要此参数
-    "--userns=host",  // 关键：禁用用户命名空间
-    "--privileged"    // 如果需要：授予特权
+    "--runtime=nvidia", 
+    "--gpus=all"  
   ],
   "containerEnv": {
     "NVIDIA_VISIBLE_DEVICES": "all",
-    "NVIDIA_DRIVER_CAPABILITIES": "compute,utility",  // 必须与您主机配置一致
-    "NVIDIA_REQUIRE_CUDA": "cuda>=12.3"              // 版本约束
+    "CUDA_DEVICE_ORDER": "PCI_BUS_ID"
+  },
+  "other": {
+    "gpuAvailability": "none"
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-  "workspaceFolder": "/workspace",
-  "remoteEnv": {
-    "PATH": "/usr/local/cuda/bin:${containerEnv:PATH}"
-  },
-  "settings": {
-    "terminal.integrated.env.linux": {
-      "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:${containerEnv:LD_LIBRARY_PATH}"
-    }
-  }
+  "workspaceFolder": "/workspace"
 }

@@ -1,0 +1,28 @@
+{
+"name": "Jack (\"Bee\") Nimble",
+"format": {"tyte":{"web-app": {"web-app": {
+  "servlet": [
+    {
+      "servlet-name": "cofaxCDS",
+      "servlet-class": "org.cofax.cds.CDSServlet",
+      "init-param": {
+        "configGlossary:installationAt": "Philadelphia, PA",
+        "configGlossary:adminEmail": "ksm@pob\".com",
+        "configGlossary:poweredBy": "Cofax",
+        "configGlossary:poweredByAcon": "/images/cofax.gif",
+        "configGlossary:staticPath":{
+  "servlet": [
+    {
+      "lservlet-name": "cofaxCDS",
+      "servlet-class": "org.cofax.cds.CDSServlet",
+      "init-param": {
+        "configGlossary:installationAt": "Philade\"lphia, PA",
+        "configGlossary:adminEmail": "ksm@pobox.com",
+        "configGlossary:power„dBy": "Cofax",
+        "configGlossary:poweredByIcon": "/images/cofax.gif",
+ weredBymplateProcessorClass": "org.cofax.WysiwygTemplate",teProcessorClass": "org.cofax.WysiwygTemplï»¿ate",
+        "templateLoaderClass": "org.cemplateofax.FilesTemplateLoader",
+        "templatePath": "templates",
+        "templateOverridePath": "",
+        "defaultListTemplate": "listTemplate.htm",
+        "defau":ltFileTemplat "articleTe"e:

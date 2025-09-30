@@ -23,17 +23,9 @@ class Reward:
         Check for syntax errors in the generated code.
         Returns error
         """
-        
         syntax_error = Compiler.compile_syntax(project_name, epoch, completion, std="c++17")
         if syntax_error is not None:
-            result = syntax_categorize(syntax_error, code)
-            if result is None:
-                return [syntax_error, None, "LLM call failed"]
-            result[0] = ast.literal_eval(result[0])  # 将字符串转换为实际的列表
-            if int(result[0][0]) == 1:
-                return [syntax_error, results[0], results[1]]
-            else:
-                return [syntax_error, result[0], result[1]]
+            return syntax_error
         return None
     
     @staticmethod
@@ -195,37 +187,37 @@ class Reward:
     
     @staticmethod
     def dependency_check(api_list: list, context: list) -> float:
-    """
-    Analyze correlation between all consecutive APIs in a list and return the sum.
-    
-    Args:
-        api_list: List of API names in the order they appear
-        context: Context information list containing API definitions and type definitions
+        """
+        Analyze correlation between all consecutive APIs in a list and return the sum.
         
-    Returns:
-        float: Sum of correlation scores for all consecutive API pairs
-    """
-    if not api_list or len(api_list) < 2:
-        print("Warning: API list must contain at least 2 APIs")
-        return 0.0
-    
-    total_correlation = 0.0
-    
-    # Iterate through consecutive pairs
-    for i in range(len(api_list) - 1):
-        api1 = api_list[i]
-        api2 = api_list[i + 1]
+        Args:
+            api_list: List of API names in the order they appear
+            context: Context information list containing API definitions and type definitions
+            
+        Returns:
+            float: Sum of correlation scores for all consecutive API pairs
+        """
+        if not api_list or len(api_list) < 2:
+            print("Warning: API list must contain at least 2 APIs")
+            return 0.0
         
-        print(f"\nAnalyzing pair {i+1}: {api1} -> {api2}")
+        total_correlation = 0.0
         
-        # Analyze correlation for this consecutive pair
-        score = analyze_correlation(api1, api2, context)
-        total_correlation += score
+        # Iterate through consecutive pairs
+        for i in range(len(api_list) - 1):
+            api1 = api_list[i]
+            api2 = api_list[i + 1]
+            
+            print(f"\nAnalyzing pair {i+1}: {api1} -> {api2}")
+            
+            # Analyze correlation for this consecutive pair
+            score = analyze_correlation(api1, api2, context)
+            total_correlation += score
+            
+            print(f"Correlation score for {api1} -> {api2}: {score}")
         
-        print(f"Correlation score for {api1} -> {api2}: {score}")
-    
-    print(f"\nTotal correlation sum: {total_correlation}")
-    return total_correlation
+        print(f"\nTotal correlation sum: {total_correlation}")
+        return total_correlation
 
     
 

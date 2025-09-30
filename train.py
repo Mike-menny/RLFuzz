@@ -1,20 +1,26 @@
 import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '4,5'
+
 from tools.generator import APIGenerator
 from tools.depot import Depot
 from tools.analysis import FuncTypeAnalyzer
 import json
 
+import torch
+print('CUDA_VISIBLE_DEVICES=', os.environ.get('CUDA_VISIBLE_DEVICES'))
+print('device_count=', torch.cuda.device_count())
+print('devices=', [torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])
+
 project_name = "cjson"
 dataset_path = f"/workspace/datasets/prompt004.jsonl"
-os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3,6'
 model_path = '/workspace/models/QwenQwen2.5-Coder-7B-Instruct'
 
 kwargs = {
-    'per_device_train_batch_size': 16,
-    'per_device_eval_batch_size': 16,
+    'per_device_train_batch_size': 8,
+    'per_device_eval_batch_size': 8,
     'learning_rate': 5e-8,
     #'use_vllm': True,
-    'eval_steps': 50,
+    'eval_steps': 10,
     'save_steps': 100,
     'gradient_accumulation_steps': 1,
     'num_train_epochs': 50,
@@ -59,7 +65,7 @@ def grpo():
             dataset =dataset_path,
             split_dataset_ratio = 0.1,
             max_completion_length=4096,
-            num_generations= 16,
+            num_generations= 8,
             #deepspeed='zero2',
             **kwargs))
     last_model_checkpoint = result['last_model_checkpoint']

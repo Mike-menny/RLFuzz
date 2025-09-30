@@ -90,14 +90,41 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
     return 0;
 }"""
 
-logger = get_logger()
 epoch = 1
 project_name = "cjson"
+rewards=[]
 error = None
-#error = Reward.syntax_error(project_name=project_name,  epoch=epoch,  completion=3, code = text)
-#if error:
-    #print(error[2],"\n\n")    
-    #Reward.save_log(project_name, epoch, 0, -1, f"{error[0]}\n{error[1]}\n{error[2]}", [], None)
-reward = Reward.count_loops(project_name=project_name,  epoch=epoch,  completion=3, code = text)
-print(reward)
+            # Check for syntax errors
+error = Reward.syntax_error(project_name=project_name,  epoch=epoch,  completion=1,  code=text)
+if error:
+                if error[1] is None or error[1][0]=="0":
+                    rewards.append(0)
+                    Reward.save_log(project_name, epoch, 1, 0, error, [])
+                else:
+                    rewards.append(-1.0)
+                    Reward.save_log(project_name, epoch, 1, -1, error, [])
+                exit()
+            
+            # Check for compilation errors
+error = Reward.compilation_error(project_name=project_name, epoch=epoch, completion=1, additional_flags=["-O2"], debug=True)
+if error:
+                rewards.append(0.008)
+                Reward.save_log(project_name, epoch, 1, 0.008, error,[])
+                exit()
+            
+            # Check for fuzzing errors
+error = Reward.fuzz_error(project_name=project_name, epoch=epoch, completion=1)
+if error:
+                rewards.append(0.04)
+                Reward.save_log(project_name, epoch, 1, 0.04, error, [])
+                exit()
+
+            # If no errors
+API_Called = Reward.API_coverage(project_name=project_name, epoch=epoch, completion=i)
+rewards.append(0.04+API_Called[0])  
+Reward.save_log(project_name, epoch, 1, rewards[-1], error, API_Called)
+
+end_time = time.time()
+elapsed_time = end_time - start_time
+print("Reward computation took {:.2f} seconds".format(elapsed_time))
 

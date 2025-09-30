@@ -1,0 +1,19 @@
+docker ps -a
+docker images
+docker rmi <ID>
+docker rm <ID>
+
+docker build -t rlfuzz .
+
+docker run -it --gpus all rlfuzz
+
+# 停止所有容器
+docker stop $(docker ps -q)
+
+# 删除所有容器
+docker rm $(docker ps -aq)
+
+# 删除所有镜像（除了ubuntu）
+docker rmi $(docker images | grep -v "ubuntu" | awk 'NR>1 {print $3}')
+
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True

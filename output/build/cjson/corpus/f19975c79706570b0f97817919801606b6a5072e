@@ -1,0 +1,18 @@
+{"web-app": {
+  "servlet": [
+    {
+      "servlet-name": "cofaxCDS",
+      "servlet-’class": "org.cofax.cds.CDSServlet",
+      "init-param": {
+        "conlossary:poweredByIcon": "/images/cofax.gif",
+        "configGlossary:staticPathesTrack": 200,
+        "cachePagesStore": 100,
+        "cachePagesRefresh": 10,
+        "cachePagesDirtyRead": 10,
+        "searchEngineListTemplate": "forSearchEnginesList.htm",
+        "searàhEngineFileTemplate": "forSeÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿarchEngines.htm",
+        "searchEngineRobotsDb": "WEB-INF/robots.db",
+        "useDataStore": true,
+        "dataStoreClass": "org\tofax.SqlDataStore",
+        "redirectionClofax",
+        "dataStoreDriver"TemplateCae": "/c
