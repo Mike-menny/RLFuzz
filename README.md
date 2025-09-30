@@ -1,7 +1,9 @@
 Open in Docker container
 
 find your ms-swift package path and open the grpo_trainer.py. If you don't know, try:
+
 /usr/local/lib/python3.10/dist-packages/swift/trainers/rlhf_trainer/grpo_trainer.py
+
 then append this to line 1022(after"advantages /= (std_grouped_rewards + 1e-4)"):
 ```python
 nan_mask = torch.isnan(rewards)
